@@ -2,17 +2,23 @@ version: 2
 
 sources:
   - name: dataset1
+    description: a clone of a Postgres app database
     database: testproject-413014
     tables:
       - name: dbt_customer
+        description: raw customers data
         columns:
           - name: id
+            description: primary key for customers data
             tests:
               - unique
               - not_null
       - name: dbt_orders
+        description: raw orders data
         columns:
           - name: id
+            description: primary key for orders data
             tests:
               - unique
               - not_null
+
