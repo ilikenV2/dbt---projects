@@ -1,1 +1,0 @@
-select * from dataset1.dbt_orders

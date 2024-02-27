@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: dataset1
+    database: testproject-413014
+    tables:
+      - name: dbt_payments
